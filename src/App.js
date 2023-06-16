@@ -75,7 +75,7 @@ return (
                   <div>
                       <a href="https://mathbydoing.app" className="my-1 mr-2 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 lg:mb-0 lg:mt-0">
                         <img className="mr-2 h-12 w-12" src="https://mathbydoing.app/apple-touch-icon.png" alt="schlau.app Logo" loading="lazy" />
-                        <span className={style.heading}>Kopfrechnen</span>
+                        <span className={style.heading}>Kopfrechnen!</span>
                       </a>
                   </div>
               </div>
