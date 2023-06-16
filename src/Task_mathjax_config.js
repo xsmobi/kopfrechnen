@@ -18,7 +18,11 @@ function Task({ task, showHelp, showResult, showExplainer }) {
     };
     
     return (
-      <MathJaxContext>
+      <MathJaxContext
+      version={2}
+      config={config}
+      onStartup={(mathJax) => (mathJax.Hub.processSectionDelay = 0)}
+>
     <div className="Task">
 
         <h3><MathJax inline dynamic>{text}</MathJax></h3>

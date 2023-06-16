@@ -26,6 +26,7 @@ function App() {
 
   const types = [
     {typ: "add",    btn: "-a + b",       txt: "Plus und Minus auf dem Zahlenstrahl"},
+    {typ: "frac",    btn: " x / y ",       txt: "Brüche kürzen"},
   ]
 
   const [selectedType, setSelectedType] = useState('add');
