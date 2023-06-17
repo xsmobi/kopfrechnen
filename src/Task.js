@@ -11,18 +11,19 @@ function Task({ task, showHelp, showResult, showExplainer }) {
     //const headerClassName = style[headerclass]
 
     
-
+  /*
     const config = {
       loader: { load: ["input/asciimath"] },
       "fast-preview": {disabled: true}
     };
-    
+    */
+   //const num = 100;
+   //const den = 1000;
     return (
       <MathJaxContext>
     <div className="Task">
 
         <h3><MathJax inline dynamic>{text}</MathJax></h3>
-        
         {showHelp && <MathJax inline dynamic><div className={style.tasktext} dangerouslySetInnerHTML={{ __html: help }} /></MathJax>}
         {showResult && <MathJax><h3>{answer}</h3></MathJax>}
         {showExplainer && <MathJax><div  className={style.tasktext} dangerouslySetInnerHTML={{ __html: explainer }} /></MathJax>}
@@ -32,7 +33,4 @@ function Task({ task, showHelp, showResult, showExplainer }) {
 }
 export default Task;
 
-function getRandomInt(n) { 
-  return Math.floor(Math.random() * n);
-}
 

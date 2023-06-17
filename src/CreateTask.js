@@ -2,7 +2,10 @@ import add from './components/add';
 import frac from './components/frac';
 
 function CreateTask(task) {
-    const { type, val1, val2, explainer } = task;
+    //const { type, val1, val2, explainer } = task;
+    const {type} = task;
+    //console.log(task)
+    //console.log(type)
     let aufgabeDaten = []
     switch(type){
         case "add":
@@ -14,6 +17,7 @@ function CreateTask(task) {
         default: 
             aufgabeDaten = add()
     }
+    //let aufgabeDaten = eval(type + '()') || add();
     
     const processedTask = {
     text: `${aufgabeDaten[0]}`,
